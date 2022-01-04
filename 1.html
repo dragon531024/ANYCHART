@@ -3,7 +3,7 @@
     <script src="https://cdn.anychart.com/releases/8.8.0/js/anychart-core.min.js"></script>
     <script src="https://cdn.anychart.com/releases/8.8.0/js/anychart-graph.min.js"></script>
     <script src="https://cdn.anychart.com/releases/8.8.0/js/anychart-data-adapter.min.js"></script>
-    
+    <script src="https://unpkg.com/jsonpath@1.1.1/jsonpath.js"></script>
     <style type="text/css">
       html, body, #container {
         width: 100%;
@@ -21,9 +21,12 @@
 
         // create a chart from the loaded data
         var chart = anychart.graph(data);
-            
-        console.log(data.$network.topology[0].node.node-id)
+        console.log(data['network-topology'].topology[0].node[0]['node-id'])
+        console.log(data['network-topology'].topology.link['link-id'])
 
+        // result = "";
+        // result += jsonPath(data, "$.nodes[*]").toJSONSring() + "<br />";
+        // document.write(result);
         // set the title
         chart.title("HOOLEY SHEETTTT");
 
