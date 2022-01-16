@@ -18,29 +18,18 @@
     <script>
 
       // read & write data.json
-      // var hasildata = {"errNumber":"0","userID":"EKL0003097","data":[{"code":"BXD1","price":"15000.00","name":"Voucher Axis Aigo 1GB 24J 30H","ep":"770","isActive":"Active","type":"KUOTA","provider":"AXIS DATA"},{"code":"BXD2","price":"25000.00","name":"Voucher Axis Aigo 2GB 24J 30H","ep":"660","isActive":"Active","type":"KUOTA","provider":"AXIS DATA"},{"code":"BOLT1","price":"31000.00","name":"Bolt Kuota 1,5GB 24Jam 30hr","ep":"1320","isActive":"Active","type":"KUOTA","provider":"BOLT"},{"code":"BOLT3","price":"50000.00","name":"Bolt Kuota 3GB 24Jam 30hr","ep":"1127","isActive":"Active","type":"KUOTA","provider":"BOLT"}],"respMessage":"PROSES BERHASIL"};
-
-      // var hasilsearching = { data: [] };
-      // for (var i=0 ; i < hasildata.data.length ; i++){
-      //   if (hasildata.data[i].provider == "AXIS DATA") {
-      //     hasilsearching.data.push(hasildata.data[i]);
-      //   }   
-      // }
-
-        // console.log(hasilsearching);
-
+      
 
       anychart.onDocumentReady(function () {
         anychart.data.loadJsonFile("data1.json", function (data) {
 
-        
-
+      
         // create a chart from the loaded data
         var chart = anychart.graph(data);
 
         // LOG (node,link)
         for (var i=0; i<data['network-topology'].topology[0].node.length; i++){
-          console.log(data['network-topology'].topology[0].node[i]['node-id']);
+          console.log(JSON. stringify(data['network-topology'].topology[0].node[i]['node-id']));
         }
 
         for (var j=0; j<data['network-topology'].topology[0].link.length; j++){
