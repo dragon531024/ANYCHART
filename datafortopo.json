@@ -1,6 +1,12 @@
 {
     "nodes": [
       {
+        "id": "host:00:00:00:00:00:04"
+      },
+      {
+        "id": "host:00:00:00:00:00:03"
+      },
+      {
         "id": "openflow:1"
       },
       {
@@ -21,16 +27,20 @@
     ],
     "edges": [
       { "from": "host:00:00:00:00:00:01", "to": "openflow:1" },
-      { "from": "openflow:3", "to": "host:00:00:00:00:00:02" },
-      { "from": "openflow:1", "to": "host:00:00:00:00:00:01" },
       { "from": "openflow:4", "to": "openflow:3" },
+      { "from": "openflow:1", "to": "host:00:00:00:00:00:04" },
+      { "from": "openflow:4", "to": "host:00:00:00:00:00:03" },
+      { "from": "host:00:00:00:00:00:04", "to": "openflow:1" },
+      { "from": "openflow:1", "to": "host:00:00:00:00:00:01" },
+      { "from": "openflow:2", "to": "openflow:1" },
+      { "from": "openflow:2", "to": "host:00:00:00:00:00:02" },
       { "from": "openflow:3", "to": "openflow:4" },
       { "from": "openflow:4", "to": "openflow:2" },
+      { "from": "openflow:2", "to": "openflow:4" },
       { "from": "openflow:1", "to": "openflow:2" },
       { "from": "openflow:3", "to": "openflow:1" },
-      { "from": "openflow:2", "to": "openflow:1" },
-      { "from": "host:00:00:00:00:00:02", "to": "openflow:3" },
-      { "from": "openflow:1", "to": "openflow:3" },
-      { "from": "openflow:2", "to": "openflow:4" }
+      { "from": "host:00:00:00:00:00:02", "to": "openflow:2" },
+      { "from": "host:00:00:00:00:00:03", "to": "openflow:4" },
+      { "from": "openflow:1", "to": "openflow:3" }
     ]
   }
