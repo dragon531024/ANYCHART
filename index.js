@@ -18,6 +18,15 @@ jsonReader("./data1.json", (err, data) => {
     console.log(err);
     return;
   }
+
+  fs.writeFile('./fromindex.json', JSON.stringify(data, null, 2), err => {
+    if (err) {
+        console.log(err);
+    } else {
+        console.log('File successfully written!')
+    }
+});
+
   for (var i=0; i<data['network-topology'].topology[0].node.length; i++){
     console.log(JSON. stringify(data['network-topology'].topology[0].node[i]['node-id']));
   }
@@ -26,10 +35,10 @@ jsonReader("./data1.json", (err, data) => {
   }
 });
 
-// fs.writeFile('./newCustomer.json', JSON.stringify(newObject, null, 2), err => {
+// fs.writeFile('./fromindex.json', JSON.stringify(newObject, null, 2), err => {
 //     if (err) {
 //         console.log(err);
 //     } else {
 //         console.log('File successfully written!')
 //     }
-// })
+// });
