@@ -1,0 +1,36 @@
+{
+    "nodes": [
+      {
+        "id": "openflow:1"
+      },
+      {
+        "id": "openflow:2"
+      },
+      {
+        "id": "openflow:3"
+      },
+      {
+        "id": "host:00:00:00:00:00:02"
+      },
+      {
+        "id": "openflow:4"
+      },
+      {
+        "id": "host:00:00:00:00:00:01"
+      }
+    ],
+    "edges": [
+      { "from": "host:00:00:00:00:00:01", "to": "openflow:1" },
+      { "from": "openflow:3", "to": "host:00:00:00:00:00:02" },
+      { "from": "openflow:1", "to": "host:00:00:00:00:00:01" },
+      { "from": "openflow:4", "to": "openflow:3" },
+      { "from": "openflow:3", "to": "openflow:4" },
+      { "from": "openflow:4", "to": "openflow:2" },
+      { "from": "openflow:1", "to": "openflow:2" },
+      { "from": "openflow:3", "to": "openflow:1" },
+      { "from": "openflow:2", "to": "openflow:1" },
+      { "from": "host:00:00:00:00:00:02", "to": "openflow:3" },
+      { "from": "openflow:1", "to": "openflow:3" },
+      { "from": "openflow:2", "to": "openflow:4" }
+    ]
+  }
