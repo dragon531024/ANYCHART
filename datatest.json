@@ -1,0 +1,76 @@
+{
+    "nodes": [
+      {
+        "id": "AAAA"
+      },
+      {
+        "id": "BBBB"
+      },
+      {
+        "id": "CCCC"
+      },
+      {
+        "id": "DDDD"
+      },
+      {
+        "id": "EEEE"
+      },
+      {
+        "id": "FFFF"
+      },
+      {
+        "id": "GGGG"
+      },
+      {
+        "id": "HHHH"
+      },
+      {
+        "id": "IIII"
+      },
+      {
+        "id": "JJJJ"
+      },
+      {
+        "id": "KKKK"
+      },
+      {
+        "id": "LLLL"
+      },
+      {
+        "id": "MMMM"
+      },
+      {
+        "id": "NNNN"
+      },
+      {
+        "id": "OOOO"
+      },
+      {
+        "id": "PPPP"
+      }
+    ],
+    "edges": [
+      { "from": "AAAA", "to": "BBBB" },
+      { "from": "AAAA", "to": "CCCC" },
+      { "from": "DDDD", "to": "AAAA" },
+      { "from": "AAAA", "to": "EEEE" },
+      { "from": "FFFF", "to": "DDDD" },
+      { "from": "DDDD", "to": "FFFF" },
+      { "from": "GGGG", "to": "DDDD" },
+      { "from": "CCCC", "to": "AAAA" },
+      { "from": "EEEE", "to": "AAAA" },
+      { "from": "HHHH", "to": "IIII" },
+      { "from": "AAAA", "to": "DDDD" },
+      { "from": "AAAA", "to": "IIII" },
+      { "from": "JJJJ", "to": "DDDD" },
+      { "from": "JJJJ", "to": "KKKK" },
+      { "from": "LLLL", "to": "MMMM" },
+      { "from": "LLLL", "to": "CCCC" },
+      { "from": "GGGG", "to": "FFFF" },
+      { "from": "CCCC", "to": "FFFF" },
+      { "from": "FFFF", "to": "NNNN" },
+      { "from": "OOOO", "to": "PPPP" },
+      { "from": "CCCC", "to": "GGGG" },
+      { "from": "CCCC", "to": "JJJJ" }
+    ]
+  }
